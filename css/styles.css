@@ -1,0 +1,178 @@
+:root {
+  --primary-description-color:#757575 ;
+  --primary-white-color:#FFFFFF;
+  --title-color:#212121;
+  --logo-color:#000000;
+  --primary-blue-color:#2196F3;
+  --primary-button-color:#F5F4FA;
+  --footer-bg-color:#2F303A;
+  --primary-bg-color:#E5E5E5;
+  --primary-font-size: 14px;
+  --primary-font-weight: 400;
+  --primary-font-family: Roboto, sans-serif;
+}
+body{
+  background-color:var(--primary-white-color);
+  font-size: var(--primary-font-size);
+  font-weight: var(--primary-font-weight);
+  font-family: var(--primary-font-family);
+}
+ul{
+  list-style: none;
+}
+.link{
+  text-decoration: none;
+}
+.logo{
+  font-family: Raleway,sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--primary-blue-color);
+}
+.primary-logo{
+  color: var(--logo-color)
+}
+.secondary-logo{
+  color:var(--primary-white-color)
+}
+.navigation-list .navigation-item .current{
+  color: #2196F3;
+}
+.navigation-item .navigation-link{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+  
+}
+.navigation-link:hover,
+.navigation-link:focus{
+  color: var(--primary-blue-color);
+}
+
+.header-contacts-item .header-contacts-link{
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+ color: var(--primary-description-color);
+}
+.header-contacts-link:hover,
+.header-contacts-link:focus{
+color: var(--primary-blue-color);
+}
+.hero-section{
+  background-color: var(--footer-bg-color);
+}
+.hero-title{
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--primary-white-color);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.hero-button{
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background-color: var(--primary-blue-color);
+  color: var(--primary-white-color);
+}
+.sub-title{
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+.features-title{
+  font-size: 14px;
+  font-weight: 700;
+  color:var(--title-color);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-description{
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-description-color);
+}
+.team-section{
+  background-color:var(--primary-button-color);
+}
+.team-name{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--title-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-position{
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-description-color);
+}
+.footer-section{
+  background-color: var(--footer-bg-color);
+}
+.footer-address .address-link{
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+.address-link:focus,
+.address-link:hover{
+color: var(--primary-blue-color);
+}
+.footer-contacts-item .footer-contacts-link{
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);;
+}
+.footer-contacts-link:focus,
+.footer-contacts-link:hover{
+  color: var(--primary-blue-color);
+}
+.portfolio-button-item .portfolio-button{
+  background-color: var(--primary-button-color);
+  color: var(--title-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.portfolio-button:focus,
+.portfolio-button:hover{
+  color: var(--primary-white-color);
+  background-color: var(--primary-blue-color);
+}
+.projects-item-title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.projects-item-description{
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-description-color);
+}
