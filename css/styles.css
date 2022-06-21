@@ -64,6 +64,7 @@ color: var(--primary-blue-color);
 }
 .hero-section{
   background-color: var(--footer-bg-color);
+  text-align: center;
 }
 .hero-title{
   font-weight: 900;
