@@ -16,32 +16,34 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html" class="link logo">Web<span class="primary-logo">Studio</span> </a>
-      <nav>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a href="./index.html" class="link navigation-link">Студия</a>
+    <header class="header">
+      <div class="container">
+        <a class="link logo" href="./index.html">Web<span class="primary-logo">Studio</span> </a>
+        <nav>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="./index.html" class="link navigation-link">Студия</a>
+            </li>
+            <li class="navigation-item">
+              <a href="./portfolio.html" class="current link navigation-link">Портфолио</a>
+            </li>
+            <li class="navigation-item"><a href="#" class="link navigation-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contacts-list">
+          <li class="header-contacts-item">
+            <a href="mailto:info@devstudio.com" class="link header-contacts-link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="navigation-item">
-            <a href="./portfolio.html" class="current link navigation-link">Портфолио</a>
+          <li class="header-contacts-item">
+            <a href="tel:+380961111111" class="link header-contacts-link">+38 096 111 11 11</a>
           </li>
-          <li class="navigation-item"><a href="#" class="link navigation-link">Контакты</a></li>
         </ul>
-      </nav>
-      <ul class="header-contacts-list">
-        <li class="header-contacts-item">
-          <a href="mailto:info@devstudio.com" class="link header-contacts-link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contacts-item">
-          <a href="tel:+380961111111" class="link header-contacts-link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section class="portfolio-section">
+      <section class="portfolio section">
         <h1 class="hero-title portfolio-title">Навигация</h1>
         <ul class="portfolio-button-list">
           <li class="portfolio-button-item">
@@ -154,7 +156,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer-section">
+    <footer class="footer">
       <a href="./index.html" class="link logo">Web<span class="secondary-logo">Studio</span></a>
       <address class="footer-address">
         <a
