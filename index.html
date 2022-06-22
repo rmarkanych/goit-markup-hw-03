@@ -16,37 +16,39 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html" class="link logo">Web<span class="primary-logo">Studio</span></a>
-      <nav>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a href="./index.html" class="current navigation-link link">Студия</a>
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" class="link logo">Web<span class="primary-logo">Studio</span></a>
+        <nav>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="./index.html" class="current navigation-link link">Студия</a>
+            </li>
+            <li class="navigation-item">
+              <a href="./portfolio.html" class="navigation-link link">Портфолио</a>
+            </li>
+            <li class="navigation-item"><a href="#" class="navigation-link link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contacts-list">
+          <li class="header-contacts-item">
+            <a href="mailto:info@devstudio.com" class="header-contacts-link link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="navigation-item">
-            <a href="./portfolio.html" class="navigation-link link">Портфолио</a>
+          <li class="header-contacts-item">
+            <a href="tel:+380961111111" class="header-contacts-link link">+38 096 111 11 11</a>
           </li>
-          <li class="navigation-item"><a href="#" class="navigation-link link">Контакты</a></li>
         </ul>
-      </nav>
-      <ul class="header-contacts-list">
-        <li class="header-contacts-item">
-          <a href="mailto:info@devstudio.com" class="header-contacts-link link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contacts-item">
-          <a href="tel:+380961111111" class="header-contacts-link link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-button" type="button">Заказать услугу</button>
       </section>
-      <section>
-        <h2 class="sub-title features">Наши особенности</h2>
+      <section class="features section">
+        <h2 class="sub-title">Наши особенности</h2>
         <ul class="features-list">
           <li class="features-item">
             <h3 class="features-title">Внимание к деталям</h3>
@@ -74,8 +76,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2 class="sub-title engagement">Чем мы занимаемся</h2>
+      <section class="engagement section">
+        <h2 class="sub-title">Чем мы занимаемся</h2>
         <ul class="engagement-list">
           <li class="engagement-item">
             <img class="engagement-image" src="./images/box1opti.jpeg" alt="coding" width="370" />
@@ -98,8 +100,8 @@
           </li>
         </ul>
       </section>
-      <section class="team-section">
-        <h2 class="sub-title team">Наша команда</h2>
+      <section class="team section">
+        <h2 class="sub-title">Наша команда</h2>
         <ul class="team-list">
           <li class="team-member">
             <img class="team-image" src="./images/member1opti.jpeg" alt="smiling man" width="270" />
@@ -129,7 +131,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer-section">
+    <footer class="footer">
       <a href="./index.html" class="link logo">Web<span class="secondary-logo">Studio</span></a>
       <address class="footer-address">
         <a
