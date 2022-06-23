@@ -1,3 +1,4 @@
+/* MAIN STYLES */
 :root {
   --primary-description-color: #757575;
   --primary-white-color: #ffffff;
@@ -18,8 +19,8 @@ body {
   font-family: var(--primary-font-family);
 }
 ul {
-  /* margin-top: 0; */
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 h1,
@@ -29,26 +30,31 @@ h4,
 h5,
 h6,
 p {
-  /* margin-top: 0; */
   margin: 0;
 }
 .link {
   text-decoration: none;
+  color: currentColor;
 }
 .container {
   width: 1200px;
-  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+/* HEADER */
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+.header-container {
+  display: flex;
+}
 .logo {
-  /* margin-left: 215px; */
-  /* margin-right: 93px; */
   padding-top: 24px;
   padding-bottom: 25px;
   font-family: Raleway, sans-serif;
@@ -84,15 +90,14 @@ p {
 .navigation-link:focus {
   color: var(--primary-blue-color);
 }
-.navigation-item {
+.navigation-link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 .header-contacts-list {
   display: flex;
-  justify-content: flex-end;
-  /* margin-right: 215px; */
-  /* margin-left: 331px; */
+  margin-left: auto;
 }
 .header-contacts-item .header-contacts-link {
   font-weight: 500;
@@ -103,15 +108,27 @@ p {
 .header-contacts-item:not(:last-child) {
   margin-right: 50px;
 }
+.header-contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .header-contacts-link:hover,
 .header-contacts-link:focus {
   color: var(--primary-blue-color);
 }
+/* HERO */
 .hero {
   background-color: var(--footer-bg-color);
   text-align: center;
 }
+.hero-container {
+  margin: 0 auto;
+  width: 696px;
+}
 .hero-title {
+  padding-top: 200px;
+  padding-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -121,6 +138,12 @@ p {
   text-align: center;
 }
 .hero-button {
+  margin-bottom: 200px;
+  padding: 10px 31px;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
   font-weight: 700;
   font-family: inherit;
   font-size: 16px;
@@ -135,6 +158,21 @@ p {
 .hero-button:focus {
   background-color: #188ce8;
 }
+/* FEATURES */
+.features {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.features-container > .sub-title {
+  visibility: hidden;
+}
+.features-list {
+  display: flex;
+  gap: 30px;
+}
+.features-item {
+  width: 270px;
+}
 .sub-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -143,10 +181,6 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-}
-.features {
-  /* padding-top: 0; */
-  padding-bottom: 0;
 }
 .features-title {
   font-size: 14px;
@@ -161,10 +195,31 @@ p {
   letter-spacing: 0.03em;
   color: var(--primary-description-color);
 }
+/* ENGAGEMENT */
+.engagement-list {
+  display: flex;
+  gap: 30px;
+}
+.engagement-item {
+  width: 370px;
+}
+/* TEAM */
 .team {
   background-color: var(--primary-button-color);
 }
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+.team-member {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -173,14 +228,97 @@ p {
   letter-spacing: 0.03em;
 }
 .team-position {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-description-color);
 }
+/* PORTFOLIO */
+.portfolio {
+  padding-top: 70px;
+}
+.portfolio-title {
+  visibility: hidden;
+}
+.button-container {
+  padding-bottom: 50px;
+}
+.portfolio-button-list {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-button-item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-button-item .portfolio-button {
+  background-color: var(--primary-button-color);
+  color: var(--title-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.portfolio-button:focus,
+.portfolio-button:hover {
+  color: var(--primary-white-color);
+  background-color: var(--primary-blue-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio-button {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+}
+.projects-list {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+}
+.projects-item {
+  width: 370px;
+  border-right: 1px solid rgba(238, 238, 238, 1);
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
+}
+.projects-item-title {
+  padding-top: 20px;
+  padding-bottom: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.projects-item-description {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-description-color);
+}
+/* FOOTER */
 .footer {
   background-color: var(--footer-bg-color);
+}
+.footer-container > .logo {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.footer-address {
+  padding-bottom: 60px;
 }
 .footer-address .address-link {
   font-style: normal;
@@ -198,36 +336,10 @@ p {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-contacts-item {
+  padding-top: 9px;
+}
 .footer-contacts-link:focus,
 .footer-contacts-link:hover {
   color: var(--primary-blue-color);
-}
-.portfolio-button-item .portfolio-button {
-  background-color: var(--primary-button-color);
-  color: var(--title-color);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-}
-.portfolio-button:focus,
-.portfolio-button:hover {
-  color: var(--primary-white-color);
-  background-color: var(--primary-blue-color);
-}
-.projects-item-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-color);
-}
-.projects-item-description {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  color: var(--primary-description-color);
 }
